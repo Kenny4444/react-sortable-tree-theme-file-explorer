@@ -95,8 +95,7 @@ class FileThemeNodeContentRenderer extends Component {
     const nodeContent = (
       <div style={{ height: '100%' }} {...otherProps}>
         {toggleChildrenVisibility &&
-          node.children &&
-          node.children.length > 0 && (
+          node.children && (
             <button
               type="button"
               aria-label={node.expanded ? 'Collapse' : 'Expand'}
